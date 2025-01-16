@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #2aa2de, #283e51);
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #2aa2de, #283e51);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #4ecdc4;
+}
+
+/* Botón de llamada a la acción */
+.cta-btn {
+  text-decoration: none;
+  margin-right: 3px;
+  background: #ffffff;
+  color: #000000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Ajusta el tamaño del botón */
+  height: 50px; /* El ancho y alto deben ser iguales */
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 2rem; /* Ajusta el tamaño del texto */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ffffff;
+  transform: scale(1.1);
+}
+
+.cuerpo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box{
+  justify-content: space-evenly;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.Saldo {
+  padding: 30px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  height: 300px;
+  width: 440px;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.titulo-saldo {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detalle-saldo {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.cantidad-saldo {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Botón principal */
+.btn-accion {
+  background: linear-gradient(135deg, #ff5722, #ff9800);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.btn-accion:hover {
+  background: linear-gradient(135deg, #e64a19, #ff5722);
+  transform: translateY(-3px);
+}
+
+/* Opciones adicionales */
+.cta-opciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.op {
+  text-decoration: none;
+  background: linear-gradient(135deg, #3e3d3d, #000000);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.op:hover {
+  transform: translateY(-3px);
+}
+
+
+.Tarjeta {
+  background: linear-gradient(135deg, #3e3d3d, #000000);
+  color: #fff;
+  width: 400px;
+  height: 240px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.numero-tarjeta {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 1rem 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.informacion h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+.informacion p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.opciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Botones de opciones */
+.opc {
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(135deg, #3e3d3d, #000000);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Hover efecto */
+.opc:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .opc {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
